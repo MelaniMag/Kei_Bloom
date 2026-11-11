@@ -1,0 +1,206 @@
+/* ---------- Colors (from Figma) ---------- */
+:root {
+  --purple-dark: #6C597A;
+  --purple-light: #AE9DC1;
+  --bar-purple: #6c597a;
+  --text-color: #EFE4FA;
+  --white: #FFFFFF;
+}
+
+/* ---------- Page basics ---------- */
+body {
+  margin: 0;
+  background-color: var(--purple-light);
+  font-family: "Grandstander", sans-serif;
+  font-size: 24px;
+  /* letter-spacing: 1.2px; */
+  color: var(--text-color);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: "Fredoka One", sans-serif;
+  font-weight: normal;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  padding: 0 40px;
+  background-color: var(--bar-purple);
+  box-shadow: -4px 11px 5px rgba(0, 0, 0, 0.20);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  font-family: "Fredoka One", sans-serif;
+  font-size: 64px;
+  color: var(--text-color);
+}
+
+.logo-flower {
+  width: 104px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 50px;
+}
+
+.main-nav a,
+.more-button {
+  font-family: "Fredoka One", sans-serif;
+  font-size: 32px;
+  letter-spacing: 0;
+  color: var(--white);
+}
+
+.more-button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.main-nav a:hover {
+    color: #DAB1CF;
+}
+
+/* ---------- Main area ---------- */
+.wallpaper {
+  background-image: url("images/about-wallpaper.png");
+  background-size: cover;
+  background-position: center top;
+  padding: 140px 0 160px 0;
+}
+
+.content {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* ---------- Meet the Artist ---------- */
+.meet-artist {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.artist-text {
+  width: 700px;
+}
+
+.artist-text h1 {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.artist-text p {
+  margin: 0 0 24px 0;
+}
+
+.artist-photo {
+  width: 380px;
+  height: 380px;
+  border-radius: 190px;
+  object-fit: cover;
+}
+
+/* ---------- Other Works ---------- */
+.other-works {
+  margin-top: 40px;
+}
+
+.other-works h2 {
+  width: 700px;
+  margin-bottom: -50px;
+  text-align: center;
+}
+
+.works-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 50px;
+}
+
+.work-truck {
+  width: 326px;
+  margin-bottom: 100px;
+}
+
+.work-jellyfish {
+  width: 340px;
+}
+
+.work-crystal {
+  width: 359px;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  height: 472px;
+  background-color: var(--purple-dark);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 340px;
+  padding: 0 70px;
+}
+
+.footer-logo {
+  width: 297px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 60px 50px; */
+  width: 440px;
+  letter-spacing: 1.2px;
+}
+
+.footer-nav li {
+  width: 50%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.credit {
+  margin-top: 60px;  
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  text-align: center;
+}
