@@ -1,0 +1,208 @@
+/* ---------- Colors ---------- */
+:root {
+  --page-background: #ae9dc1;
+  --card-background: #9880a9;
+  --bar-purple: #6c597a;
+  --light-text: #efe4fa;
+  --green: #c4e7d4;
+  --blue: #c4d1e7;
+  --white: #ffffff;
+}
+
+/* ---------- Basics ---------- */
+body {
+  margin: 0;
+  background-color: var(--page-background);
+  color: var(--light-text);
+  font-family: "Grandstander", sans-serif;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  padding: 0 40px;
+  background-color: var(--bar-purple);
+  box-shadow: -4px 11px 5px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  font-family: "Fredoka One", sans-serif;
+  font-size: 64px;
+  color: var(--light-text);
+}
+
+.logo-flower {
+  width: 104px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 50px;
+}
+
+.main-nav a {
+  font-family: "Fredoka One", sans-serif;
+  font-size: 32px;
+  color: var(--white);
+}
+
+.main-nav a:hover {
+    color: #DAB1CF;
+}
+
+/* ---------- Page body ---------- */
+/* The flower wallpaper is one PNG. It sits behind everything in the main area.
+   The 66px moves it down to match the Figma design. */
+.page-body {
+  display: flex;
+  justify-content: center;
+  padding: 57px 0 140px 0;
+  background-color: var(--page-background);
+  background-image: url("images/wallpaper.png");
+  background-repeat: no-repeat;
+  background-position: center 66px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-image {
+  width: 740px;
+  height: 740px;
+}
+
+/* ---------- Info card ---------- */
+.info-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1020px;
+  margin-top: 62px;
+  padding: 0 0 45px 0;
+  background-color: var(--card-background);
+  border: 16px solid var(--bar-purple);
+  border-radius: 105px;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 64px;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 64px;
+  font-weight: normal;
+  line-height: 1;
+  color: var(--light-text);
+  -webkit-text-stroke: 15px var(--bar-purple);
+  paint-order: stroke fill;
+}
+
+.year {
+  margin-top: 50px;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 48px;
+  line-height: 1;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 127px;
+}
+
+.details p {
+  font-family: "Fredoka One", sans-serif;
+  font-size: 48px;
+  line-height: 1;
+}
+
+.description {
+  width: 952px;
+  margin-top: 184px;
+  font-size: 32px;
+  letter-spacing: 1.6px;
+  line-height: 1;
+}
+
+.green {
+  color: var(--green);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  height: 472px;
+  background-color: var(--bar-purple);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 340px;
+  padding: 0 70px;
+}
+
+.footer-logo {
+  width: 297px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 440px;
+}
+
+.footer-nav li {
+  width: 50%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.footer-nav a {
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  color: var(--white);
+}
+
+.credit {
+  margin-top: 60px;  
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  text-align: center;
+}
