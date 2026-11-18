@@ -1,20 +1,26 @@
 /* ---------- Colors ---------- */
 :root {
-  --page-background: #ae9dc1;
-  --card-background: #9880a9;
+  --backgroud: #ae9dc1;
   --bar-purple: #6c597a;
-  --light-text: #efe4fa;
-  --green: #c4e7d4;
+  --card-background: #9880a9;
+  --text-color: #efe4fa;
   --blue: #c4d1e7;
+  --green: #c4e7d4;
   --white: #ffffff;
+  --sakura: #dab1c
+}
+
+::selection {
+  background-color: var(--blue); /* Highlight background color */
+  color: var(--bar-purple);               /* Text color */
 }
 
 /* ---------- Basics ---------- */
 body {
   zoom: 0.8;
   margin: 0;
-  background-color: var(--page-background);
-  color: var(--light-text);
+  background-color: var(--backgroud);
+  color: var(--text-color);
   font-family: "Grandstander", sans-serif;
 }
 
@@ -57,7 +63,7 @@ img {
 .logo-text {
   font-family: "Fredoka One", sans-serif;
   font-size: 64px;
-  color: var(--light-text);
+  color: var(--text-color);
 }
 
 .logo-flower {
@@ -86,8 +92,8 @@ img {
   display: flex;
   justify-content: center;
   padding: 57px 0 140px 0;
-  background-color: var(--page-background);
-  background-image: url("images/wallpaper.png");
+  background-color: var(--backgroud);
+  background-image: url("../images/wallpaper.png");
   background-repeat: no-repeat;
   background-position: center 66px;
 }
@@ -124,7 +130,7 @@ h1 {
   font-size: 64px;
   font-weight: normal;
   line-height: 1;
-  color: var(--light-text);
+  color: var(--text-color);
   -webkit-text-stroke: 15px var(--bar-purple);
   paint-order: stroke fill;
 }

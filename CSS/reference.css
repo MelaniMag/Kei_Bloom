@@ -1,9 +1,10 @@
 /* ---------- Colors (from the Figma design) ---------- */
 body {
   --background: #ae9dc1;
-  --dark-purple: #6c597a;
+  --bar-purple: #6c597a;
   --text-color: #efe4fa;
-  --light-blue: #c4d1e7;
+  --blue: #c4d1e7;
+  --green: #c4e7d4;
   --white: #ffffff;
   --sakura: #dab1cf;
 
@@ -16,6 +17,11 @@ body {
   letter-spacing: 1.2px;
 }
 
+::selection {
+  background-color: var(--blue); /* Highlight background color */
+  color: var(--bar-purple);               /* Text color */
+}
+
 /* ---------- Header ---------- */
 .site-header {
   position: sticky;
@@ -26,7 +32,7 @@ body {
   align-items: center;
   height: 150px;
   padding: 0 40px;
-  background-color: var(--dark-purple);
+  background-color: var(--bar-purple);
   box-shadow: -4px 11px 4.6px rgba(0, 0, 0, 0.25);
 }
 
@@ -83,9 +89,12 @@ body {
 /* The sakura wallpaper is one image exported from Figma */
 .page-main {
   padding: 110px 0 350px 0;
-  background-image: url("images\references-images\references_wallpaper.png");
+  
+  background-image: url("../images/the-wallpaper.png");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: center 22px;
+  background-attachment: fixed;
 }
 
 .page-title {
@@ -184,7 +193,7 @@ body {
   box-sizing: border-box;
   height: 472px;
   padding: 75px 100px 0 75px;
-  background-color: var(--dark-purple);
+  background-color: var(--bar-purple);
 }
 
 .footer-logo {
@@ -213,7 +222,7 @@ body {
 }
 
 .footer-list a:hover {
-  color: var(--light-blue);
+  color: var(--blue);
 }
 
 .footer-credit {

@@ -1,17 +1,24 @@
 /* ---------- Colors (from Figma) ---------- */
 :root {
-  --purple-dark: #6C597A;
-  --purple-light: #AE9DC1;
+  --background: #AE9DC1;
   --bar-purple: #6c597a;
   --text-color: #EFE4FA;
+  --blue: #c4d1e7;
+  --green: #c4e7d4;
   --white: #FFFFFF;
+  --sakura: #dab1cf;
+}
+
+::selection {
+  background-color: var(--blue); /* Highlight background color */
+  color: var(--bar-purple);               /* Text color */
 }
 
 /* ---------- Page basics ---------- */
 body {
   zoom: 0.8;
   margin: 0;
-  background-color: var(--purple-light);
+  background-color: var(--background);
   font-family: "Grandstander", sans-serif;
   font-size: 24px;
   /* letter-spacing: 1.2px; */
@@ -44,6 +51,11 @@ h1 {
 h2 {
   font-size: 48px;
 
+}
+
+p {
+  letter-spacing: 1.2px;
+  line-height: 130%;
 }
 
 /* ---------- Header ---------- */
@@ -99,9 +111,12 @@ h2 {
 
 /* ---------- Main area ---------- */
 .wallpaper {
-  background-image: url("images/about-wallpaper.png");
+  background-image: url("../images/the-wallpaper.png");
   background-size: cover;
-  background-position: center top;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
   padding: 140px 0 160px 0;
 }
 
@@ -170,7 +185,7 @@ h2 {
 /* ---------- Footer ---------- */
 .site-footer {
   height: 472px;
-  background-color: var(--purple-dark);
+  background-color: var(--bar-purple);
 }
 
 .footer-top {

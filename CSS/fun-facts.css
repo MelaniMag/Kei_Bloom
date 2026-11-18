@@ -1,16 +1,25 @@
 /* ---------- Colors ---------- */
 :root {
   --background: #AE9DC1;
-  --dark-purple: #6C597A;
-  --light-text: #EFE4FA;
+  --bar-purple: #6C597A;
+  --text-color: #EFE4FA;
+  --blue: #c4d1e7;
+  --green: #c4e7d4;
   --white: #FFFFFF;
+  --sakura: #dab1cf;
+}
+
+::selection {
+  background-color: var(--blue); /* Highlight background color */
+  color: var(--bar-purple);               /* Text color */
 }
 
 /* ---------- Page ---------- */
 body {
+  zoom: 0.8;
   margin: 0;
   background: var(--background);
-  color: var(--light-text);
+  color: var(--text-color);
   font-family: "Grandstander", sans-serif;
   font-size: 24px;
 }
@@ -26,7 +35,7 @@ body {
   align-items: center;
   height: 150px;
   padding: 0 80px 0 40px;
-  background: var(--dark-purple);
+  background: var(--bar-purple);
   box-shadow: -4px 11px 5px rgba(0, 0, 0, 0.25);
 }
 
@@ -34,7 +43,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--light-text);
+  color: var(--text-color);
   font-family: "Fredoka One", sans-serif;
   font-size: 64px;
   text-decoration: none;
@@ -64,42 +73,36 @@ body {
   cursor: pointer;
 }
 
+/* Hover color  */
+.nav-list a:hover,
+.nav-list button:hover {
+  color: var(--sakura);
+}
+
 /* ---------- Main ---------- */
 .page-main {
   position: relative;
   overflow: hidden;
+
+  background-image: url("../images/the-wallpaper.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* ---------- Background flowers ---------- */
 .wallpaper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  background-image: url("../images/the-wallpaper.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .flower {
   position: absolute;
 }
-
-/* left = percentage of the page width, top = pixels from the top of main */
-.flower-1 { left: 48%; top: 215px; width: 133px; }
-.flower-2 { left: 39.7%; top: 662px; width: 155px; }
-.flower-3 { left: 8.5%; top: 1281px; width: 184px; }
-.flower-4 { left: 43.8%; top: 1037px; width: 184px; }
-.flower-5 { left: 80.8%; top: 2251px; width: 195px; }
-.flower-6 { left: 50%; top: 2347px; width: 200px; }
-.flower-7 { left: 4.1%; top: 1494px; width: 170px; }
-.flower-8 { left: 71.6%; top: 491px; width: 208px; }
-.flower-9 { left: 34.9%; top: 1772px; width: 160px; }
-.flower-10 { left: 1.7%; top: 594px; width: 135px; }
-.flower-11 { left: 1.5%; top: 98px; width: 201px; }
-.flower-12 { left: 68.9%; top: 177px; width: 165px; }
-.flower-13 { left: 83.2%; top: 270px; width: 142px; }
-.flower-14 { left: 80.3%; top: 1350px; width: 210px; }
-.flower-15 { left: 2.4%; top: 945px; width: 158px; }
-.flower-16 { left: 5%; top: 2429px; width: 214px; }
 
 /* ---------- Facts ---------- */
 .facts {
@@ -119,7 +122,7 @@ body {
 
 .page-title {
   margin: 0;
-  color: var(--light-text);
+  color: var(--text-color);
   font-family: "Fredoka One", sans-serif;
   font-size: 64px;
   font-weight: normal;
@@ -164,14 +167,18 @@ body {
   margin: 0;
 }
 
+.fact-source a:hover {
+  color: var(--sakura);
+}
+
 .fact-link {
-  color: var(--light-text);
+  color: var(--text-color);
 }
 
 /* ---------- Footer ---------- */
 .site-footer {
   padding: 75px 44px 35px 75px;
-  background: var(--dark-purple);
+  background: var(--bar-purple);
 }
 
 .footer-top {
@@ -207,7 +214,11 @@ body {
 
 .footer-credit {
   margin: 60px 0 0 0;
-  color: var(--light-text);
+  color: var(--text-color);
   letter-spacing: 1.2px;
   text-align: center;
+}
+
+.footer-item a:hover {
+  color: var(--blue);
 }
