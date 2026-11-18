@@ -83,7 +83,7 @@ body {
 /* The sakura wallpaper is one image exported from Figma */
 .page-main {
   padding: 110px 0 350px 0;
-  background-image: url("images/references_wallpaper.png");
+  background-image: url("images\references-images\references_wallpaper.png");
   background-repeat: no-repeat;
   background-position: center 22px;
 }

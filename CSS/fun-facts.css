@@ -1,0 +1,213 @@
+/* ---------- Colors ---------- */
+:root {
+  --background: #AE9DC1;
+  --dark-purple: #6C597A;
+  --light-text: #EFE4FA;
+  --white: #FFFFFF;
+}
+
+/* ---------- Page ---------- */
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--light-text);
+  font-family: "Grandstander", sans-serif;
+  font-size: 24px;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  /* sticky keeps the header at the top while you scroll */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  padding: 0 80px 0 40px;
+  background: var(--dark-purple);
+  box-shadow: -4px 11px 5px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--light-text);
+  font-family: "Fredoka One", sans-serif;
+  font-size: 64px;
+  text-decoration: none;
+}
+
+.logo-flower {
+  width: 100px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Used on both the links and the More button so they look the same */
+.nav-link {
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--white);
+  font-family: "Fredoka One", sans-serif;
+  font-size: 32px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ---------- Main ---------- */
+.page-main {
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---------- Background flowers ---------- */
+.wallpaper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.flower {
+  position: absolute;
+}
+
+/* left = percentage of the page width, top = pixels from the top of main */
+.flower-1 { left: 48%; top: 215px; width: 133px; }
+.flower-2 { left: 39.7%; top: 662px; width: 155px; }
+.flower-3 { left: 8.5%; top: 1281px; width: 184px; }
+.flower-4 { left: 43.8%; top: 1037px; width: 184px; }
+.flower-5 { left: 80.8%; top: 2251px; width: 195px; }
+.flower-6 { left: 50%; top: 2347px; width: 200px; }
+.flower-7 { left: 4.1%; top: 1494px; width: 170px; }
+.flower-8 { left: 71.6%; top: 491px; width: 208px; }
+.flower-9 { left: 34.9%; top: 1772px; width: 160px; }
+.flower-10 { left: 1.7%; top: 594px; width: 135px; }
+.flower-11 { left: 1.5%; top: 98px; width: 201px; }
+.flower-12 { left: 68.9%; top: 177px; width: 165px; }
+.flower-13 { left: 83.2%; top: 270px; width: 142px; }
+.flower-14 { left: 80.3%; top: 1350px; width: 210px; }
+.flower-15 { left: 2.4%; top: 945px; width: 158px; }
+.flower-16 { left: 5%; top: 2429px; width: 214px; }
+
+/* ---------- Facts ---------- */
+.facts {
+  /* relative makes the content sit on top of the flowers */
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 300px;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 123px;
+}
+
+.page-title {
+  margin: 0;
+  color: var(--light-text);
+  font-family: "Fredoka One", sans-serif;
+  font-size: 64px;
+  font-weight: normal;
+}
+
+.intro-truck {
+  width: 130px;
+  height: 130px;
+}
+
+.fact {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  width: 1100px;
+  margin: 0 auto 88px auto;
+}
+
+/* Flips the order so the image moves to the right side */
+.fact-reverse {
+  flex-direction: row-reverse;
+}
+
+.fact-image {
+  flex-shrink: 0;
+  width: 460px;
+  height: 340px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.fact-text {
+  flex: 1;
+  letter-spacing: 2.88px;
+}
+
+.fact-quote {
+  margin: 0 0 28px 0;
+}
+
+.fact-source {
+  margin: 0;
+}
+
+.fact-link {
+  color: var(--light-text);
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  padding: 75px 44px 35px 75px;
+  background: var(--dark-purple);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 297px;
+}
+
+/* Two columns: each item is half the width of the list */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-item {
+  width: 180px;
+  margin-bottom: 60px;
+}
+
+.footer-link {
+  color: var(--white);
+  letter-spacing: 1.2px;
+  text-decoration: none;
+}
+
+.footer-credit {
+  margin: 60px 0 0 0;
+  color: var(--light-text);
+  letter-spacing: 1.2px;
+  text-align: center;
+}
