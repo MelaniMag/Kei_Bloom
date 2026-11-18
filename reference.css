@@ -1,0 +1,224 @@
+/* ---------- Colors (from the Figma design) ---------- */
+body {
+  --background: #ae9dc1;
+  --dark-purple: #6c597a;
+  --text-color: #efe4fa;
+  --light-blue: #c4d1e7;
+  --white: #ffffff;
+  --sakura: #dab1cf;
+
+  zoom: 0.8;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: "Grandstander", sans-serif;
+  font-size: 24px;
+  letter-spacing: 1.2px;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  padding: 0 40px;
+  background-color: var(--dark-purple);
+  box-shadow: -4px 11px 4.6px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 64px;
+  letter-spacing: 0;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.logo-flower {
+  width: 104px;
+  height: 102px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-link {
+  font-family: "Fredoka One", sans-serif;
+  font-size: 32px;
+  letter-spacing: 0;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.more-button {
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 32px;
+  letter-spacing: 0;
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* Hover color  */
+.nav-list a:hover,
+.more-button:hover {
+  color: var(--sakura);
+}
+
+/* ---------- Main ---------- */
+/* The sakura wallpaper is one image exported from Figma */
+.page-main {
+  padding: 110px 0 350px 0;
+  background-image: url("images/references_wallpaper.png");
+  background-repeat: no-repeat;
+  background-position: center 22px;
+}
+
+.page-title {
+  margin: 0 0 89px 0;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 64px;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.intro {
+  width: 911px;
+  margin: 0 auto;
+  font-size: 32px;
+  letter-spacing: 1.6px;
+  text-align: center;
+}
+
+/* ---------- Photo sections ---------- */
+.photo-section {
+  width: 1040px;
+  margin: 157px auto 0 auto;
+}
+
+.sakura-section {
+  margin-top: 220px;
+}
+
+.section-title {
+  margin: 0 0 25px 0;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  letter-spacing: 0;
+}
+
+/* Photos sit in a row and wrap onto the next line when they run out of room */
+.photo-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 56px 50px;
+}
+
+.photo {
+  display: block;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.truck-front {
+  width: 415px;
+  height: 415px;
+}
+
+.truck-back {
+  width: 520px;
+  height: 432px;
+}
+
+.truck-wide {
+  width: 677px;
+  height: 431px;
+}
+
+.sakura-prop {
+  width: 515px;
+  height: 515px;
+}
+
+.sakura-flower {
+  width: 350px;
+  height: 465px;
+  border-radius: 95px;
+}
+
+.sakura-wide {
+  width: 814px;
+  height: 541px;
+}
+
+.caption {
+  width: 783px;
+  margin: 63px auto 0 auto;
+  text-align: center;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  height: 472px;
+  padding: 75px 100px 0 75px;
+  background-color: var(--dark-purple);
+}
+
+.footer-logo {
+  width: 297px;
+  height: 175px;
+}
+
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 430px;
+  margin: 0;
+  padding: 25px 0 0 0;
+  list-style: none;
+  color: var(--white);
+}
+
+.footer-list li {
+  width: 215px;
+  margin-bottom: 58px;
+}
+
+.footer-link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer-list a:hover {
+  color: var(--light-blue);
+}
+
+.footer-credit {
+  width: 100%;
+  margin: 0;
+  color: var(--text-color);
+  text-align: center;
+}

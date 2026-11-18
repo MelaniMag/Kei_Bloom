@@ -9,6 +9,7 @@
 
 /* ---------- Page basics ---------- */
 body {
+  zoom: 0.8;
   margin: 0;
   background-color: var(--purple-light);
   font-family: "Grandstander", sans-serif;

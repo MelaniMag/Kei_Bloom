@@ -1,0 +1,275 @@
+/* ==========================================
+   KEI BLOOM - styles.css
+   Colors and fonts come from the Figma file.
+   ========================================== */
+
+
+/* ---------- Page basics ---------- */
+
+body {
+  /* Colors used across the site. Change them here and they change everywhere. */
+  --background: #ae9dc1;
+  --dark-purple: #6c597a;
+  --text-color: #efe4fa;
+  --light-blue: #c4d1e7;
+  --white: #ffffff;
+  --sakura: #dab1cf;
+
+
+  zoom: 0.8;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: "Grandstander", sans-serif;
+  font-size: 24px;
+}
+
+h1,
+h2 {
+  font-family: "Fredoka One", sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ---------- Header ---------- */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  padding: 0 40px;
+  background-color: var(--dark-purple);
+  box-shadow: -4px 11px 5px rgba(0, 0, 0, 0.25);
+
+  /* Keeps the header at the top while scrolling */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 64px;
+  color: var(--text-color);
+}
+
+.logo-flower {
+  height: 100px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-list a,
+.more-button {
+  font-family: "Fredoka One", sans-serif;
+  font-size: 32px;
+  color: var(--white);
+}
+
+.more-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Hover color  */
+.nav-list a:hover,
+.more-button:hover {
+  color: var(--sakura);
+}
+
+/* ---------- Page body ---------- */
+/* The flower wallpaper is one PNG. It sits behind everything in the main area.
+   The 66px moves it down to match the Figma design. */
+.page-body {
+  background-image: url("images/progress-wallpaper.png");
+  background-size: cover;
+  background-position: center top;
+  padding: 140px 0 160px 0;
+}
+
+
+/* ---------- Main content ---------- */
+
+.timeline {
+  max-width: 1208px;
+  margin: 0 auto;
+  padding: 90px 0 0 0;
+}
+
+.timeline h1 {
+  text-align: center;
+}
+
+
+/* ---------- Jump links (Early Sketches, Modeling...) ---------- */
+
+.jump-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 86px;
+}
+
+.jump-link {
+  display: block;
+  padding: 5px 30px;
+  border: 5px solid var(--dark-purple);
+  border-radius: 31px;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 40px;
+  color: var(--text-color);
+}
+
+.jump-link:hover {
+  background-color: var(--dark-purple);
+}
+
+
+/* ---------- Timeline steps (Sketches, Modeling, Painting, Final) ---------- */
+
+.step {
+  margin-top: 100px;
+}
+
+.step h2 {
+  margin-bottom: 50px;
+}
+
+/* Images sit side by side */
+.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Two images stacked on top of each other */
+.image-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.caption {
+  margin: 50px 0 35px 0;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 1.6px;
+}
+
+
+/* ---------- Tools box ---------- */
+
+.tools-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 88px;
+  padding: 0 15px;
+  border: 4px solid var(--dark-purple);
+  box-sizing: border-box;
+}
+
+.tools-text {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 1.6px;
+  color: var(--light-blue);
+}
+
+.tool-icon {
+  height: 63px;
+  border-radius: 10px;
+}
+
+
+/* ---------- Final step (everything centered) ---------- */
+
+.final-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.final-step .tools-box {
+  width: 100%;
+}
+
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  padding: 70px 100px 40px 100px;
+  background-color: var(--dark-purple);
+}
+
+.footer-logo {
+  width: 297px;
+}
+
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  gap: 50px 40px;
+}
+
+.footer-list li {
+  width: 180px;
+}
+
+.footer-list a {
+  font-size: 24px;
+  letter-spacing: 1.2px;
+}
+
+.footer-list a:hover {
+  color: var(--light-blue);
+}
+
+.credit {
+  width: 100%;
+  margin: 60px 0 0 0;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 1.2px;
+}
