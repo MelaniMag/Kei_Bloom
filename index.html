@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-
   <header class="site-header">
     <a class="logo" href="index.html">
       <span class="logo-text">Kei Bloom</span>
@@ -20,9 +19,22 @@
         <li><a href="about.html">About</a></li>
         <li><a href="progress.html">Progress</a></li>
         <li><a href="references.html">References</a></li>
-        <li><a href="#">More</a></li>
+        <li><button class="more-button" popovertarget="more-menu">More</button></li>
       </ul>
+      
+          <aside class="more-popup" id="more-menu" popover>
+            <button class="close-button" popovertarget="more-menu" popovertargetaction="hide">
+              <img class="close-image" src="images/sakura.svg" alt="Close">
+            </button>
+
+            <ul class="popup-links">
+              <li><a class="popup-link" href="fun-facts.html">Fun Facts</a></li>
+            </ul>
+        </aside>
+
     </nav>
+
+    
   </header>
 
   <main class="page-body">

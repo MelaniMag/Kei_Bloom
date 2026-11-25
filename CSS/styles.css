@@ -85,6 +85,70 @@ img {
     color: #DAB1CF;
 }
 
+/* The More button looks like the other nav links */
+.more-button {
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: "Fredoka One", sans-serif;
+  font-size: 32px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.more-button:hover {
+  color: #DAB1CF;
+}
+
+/* ---------- More popup ---------- */
+.more-popup {
+  width: 450px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  top: 0;
+  right: 0;
+  left: auto;
+  background-color: var(--bar-purple);
+}
+
+/* Only applies while the popup is open */
+.more-popup:popover-open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more-popup::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+  align-self: flex-end;
+  margin-top: 44px;
+  margin-right: 10px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.close-image {
+  width: 95px;
+  height: 93px;
+}
+
+.popup-links {
+  margin-top: 58px;
+}
+
+.popup-link {
+  font-family: "Fredoka One", sans-serif;
+  font-size: 40px;
+  color: var(--text-color);
+}
+
 /* ---------- Page body ---------- */
 /* The flower wallpaper is one PNG. It sits behind everything in the main area.
    The 66px moves it down to match the Figma design. */
